@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CALM SPACE — Tinchlik olamlari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+ <div class="logo"><div class="lotus">✿</div><div class="brand">CALM SPACE</div><small>TINCHLIK, ILHOM, RIVOJLANISH</small></div>
+ <nav>
+  <button class="nav active" data-go="home"><span>⌂</span><div><b>Bosh sahifa</b><small>Calm Space</small></div><i>›</i></button>
+  <button class="nav" data-go="assistant"><span>✿</span><div><b>AI Yordamchi</b><small>Robot do‘sting</small></div></button>
+  <button class="nav" data-open="invent"><span>✧</span><div><b>Ixtirochilar</b><small>G‘oyadan ixtirogacha</small></div></button>
+  <button class="nav" data-open="career"><span>♧</span><div><b>Kasblar olami</b><small>Kelajagingni kashf eting</small></div></button>
+  <button class="nav" data-open="lost"><span>⌕</span><div><b>Yo‘qolgan buyumlar</b><small>Toping va topdiring</small></div></button>
+  <button class="nav" data-open="galaxy"><span>✺</span><div><b>G‘oyalar galaktikasi</b><small>Yulduzlar kabi g‘oyalar</small></div></button>
+  <button class="nav" data-open="school"><span>⌂</span><div><b>Maktabim uchun</b><small>Maktabni yaxshilaymiz</small></div></button>
+  <button class="nav" data-open="safety"><span>⬡</span><div><b>Xavfsizlik</b><small>Xavfsiz bo‘ling</small></div></button>
+  <button class="nav" data-open="history"><span>⌛</span><div><b>Tarixiy sayohat</b><small>Vaqt bo‘ylab sayohat</small></div></button>
+  <button class="nav" data-open="profile"><span>♙</span><div><b>Profil</b><small>Sozlamalar va statistika</small></div></button>
+ </nav>
+ <div class="quote"><div class="stars">✦ ✧ ✦</div><b>Bugungi motivatsiya</b><p>“Tinchlik — bu tashqarida emas, ichingizda.”</p><small>— Sokinlikdan ilhom</small></div>
+ <div class="side-bottom"><button id="settings" title="Sozlamalar">⚙</button><button id="full" title="To‘liq ekran">⛶</button><button id="quiet" title="Sokin rejim">◉</button></div>
+</aside>
+<main id="home">
+<header class="topbar"><div><h1>Xush kelibsiz, <span id="username">Dreamer</span> ✨</h1><p>Bugun o‘zingiz uchun eng yaxshi kun bo‘lsin!</p></div><div class="topright"><div class="pill"><b id="clock">--:--</b><small id="date">Bugun</small></div><div class="pill weather"><span>🌤️</span><div><b>24°C</b><small>Toshkent</small></div></div><button class="premium" id="premium">♛ &nbsp; Premium imkoniyatlar</button></div></header>
+<div class="dashboard">
+<section class="center">
+ <div class="panel hero">
+  <div class="heading"><span class="headlotus">✿</span><div><h2>CALM SPACE — TINCHLIK OLAMLARI</h2><p>Tinchlaning, sokin tabiatni his eting va o‘zingizni qayta toping.</p></div></div>
+  <div class="player" id="player">
+   <div class="scene scene-japan" id="scene"></div><div class="shade"></div>
+   <div class="scene-label"><span id="sceneEmoji">🏯</span><div><b id="sceneName">Yapon bog‘i</b><small>2:00 daqiqa</small></div></div>
+   <div class="falling-leaves" id="leaves"></div>
+   <button class="play" id="play" aria-label="Boshlash">▶</button>
+   <div class="player-controls"><span>◉</span><span id="elapsed">00:00</span><div class="track"><div id="progress"></div></div><span>02:00</span><button id="mute">🔊</button><button id="expand">⛶</button></div>
+   <div class="finished" id="finished"><div>✦</div><h3>Dam olish yakunlandi</h3><p>Chuqur nafas oling. O‘zingizni qanday his qilyapsiz?</p><button id="again">Yana dam olish</button></div>
+  </div>
+  <div class="player-actions"><button id="prev">← &nbsp; Oldingi</button><button id="stop">▣ &nbsp; To‘xtatish</button><button id="next">Keyingisi &nbsp; →</button></div>
+ </div>
+ <div class="panel worlds-panel"><div class="panel-title"><h3>BOSHQA TINCHLIK OLAMLARI</h3><small>O‘zingizga mos manzarani tanlang</small></div>
+  <div class="worlds" id="worlds">
+   <button class="world selected" data-i="0"><div class="thumb t-japan"></div><b>Yapon bog‘i</b><small>🍃 Barglar va suv</small></button>
+   <button class="world" data-i="1"><div class="thumb t-forest"></div><b>O‘rmon yo‘li</b><small>🌲 Qushlar ovozi</small></button>
+   <button class="world" data-i="2"><div class="thumb t-ocean"></div><b>Dengiz sohili</b><small>🌊 To‘lqinlar</small></button>
+   <button class="world" data-i="3"><div class="thumb t-mountain"></div><b>Alp manzarasi</b><small>🏔️ Tog‘ shamoli</small></button>
+   <button class="world" data-i="4"><div class="thumb t-rain"></div><b>Yomg‘irli shahar</b><small>🌧️ Yomg‘ir</small></button>
+   <button class="world more" id="more"><div class="plus">＋</div><b>Ko‘proq</b><small>olamlarni ko‘rish</small></button>
+  </div>
+ </div>
+ <div class="features">
+  <article class="feature purple" data-open="assistant"><div class="art">🤖</div><h3>AI YORDAMCHI</h3><p>Savollaringizga javob beradi, dalda beradi.</p><button>Suhbat boshlash →</button></article>
+  <article class="feature pink" data-open="invent"><div class="art">💡</div><h3>IXTIROCHILAR</h3><p>G‘oyalaringizni yozing va ixtiroga aylantiring.</p><button>Kirish →</button></article>
+  <article class="feature blue" data-open="career"><div class="art">🧑‍🚀</div><h3>KASBLAR OLAMI</h3><p>Qiziqishingizga mos kasblarni kashf eting.</p><button>Kirish →</button></article>
+  <article class="feature violet" data-open="galaxy"><div class="art">🌌</div><h3>G‘OYALAR GALAKTIKASI</h3><p>G‘oyalarni ko‘ring va baham ko‘ring.</p><button>Kirish →</button></article>
+  <article class="feature teal" data-open="safety"><div class="art">🛡️</div><h3>XAVFSIZLIK</h3><p>Xavf-xatarlardan o‘zingizni asrashni o‘rganing.</p><button>O‘rganish →</button></article>
+  <article class="feature blue" data-open="library"><div class="art">📚</div><h3>VIRTUAL KUTUBXONA</h3><p>7–18 yosh uchun badiiy kitoblar tanlovi.</p><button>Kitob tanlash →</button></article>
+  <article class="feature purple" data-open="teacher"><div class="art">🎓</div><h3>USTOZ AI</h3><p>Uy vazifasini bosqichma-bosqich tushunib oling.</p><button>Darsni boshlash →</button></article>
+  <article class="feature violet" data-open="history"><div class="art">🏛️</div><h3>TARIXIY SAYOHAT</h3><p>Qadimiy shaharlar, buyuk olimlar va tarixiy davrlarni kashf eting.</p><button>Sayohatni boshlash →</button></article>
+ </div>
+</section>
+<aside class="right">
+ <section class="panel assistant" id="assistant">
+  <div class="right-head"><div><h3>AI YORDAMCHINGIZ</h3><small><i></i> Online</small></div><button id="clear">⟳</button></div>
+  <div class="robot-zone"><div class="orbit one"></div><div class="orbit two"></div><div class="robot">🤖</div><div class="glow"></div></div>
+  <div class="bubble" id="bubble"><b>Salom, Dreamer! 👋</b><p>Bugun sizga qanday yordam bera olaman?</p><small>Masalan: “Meni tinchlantiradigan so‘zlar ayt”</small></div>
+  <div class="voice"><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><button id="mic">🎙</button><small id="miclabel">Gapirish uchun bosing</small></div>
+  <div class="chat"><input id="message" placeholder="Bu yerga yozing…"><button id="send">➤</button></div>
+  <div class="voice-settings"><label for="teacherVoice">🗣 Ustoz ovozi</label><select id="teacherVoice" aria-label="Ustoz AI ovozini tanlash"><option value="soft">Yumshoq va sokin</option><option value="clear">Ravon va aniq</option><option value="bright">Quvnoq va jonli</option></select><button id="testVoice" type="button">▶ Sinab ko‘rish</button></div>
+  <div class="quick"><button data-msg="Menga motivatsiya ber">♡ &nbsp; Motivatsiya</button><button data-msg="Menda savol bor">ⓘ &nbsp; Savol berish</button><button data-msg="Bugun uchun foydali maslahat ber">♧ &nbsp; Top maslahatlar</button><button id="sound">♫ &nbsp; Kuy tinglash</button></div>
+ </section>
+ <section class="panel stats"><h3>BUGUNGI STATISTIKA</h3><div class="statgrid"><div><small>◉ Tinchlik vaqti</small><b id="minutes">0 min</b></div><div><small>☷ Suhbatlar</small><b id="chats">0 marta</b></div><div><small>✧ G‘oyalar yozildi</small><b id="ideas">0 ta</b></div><div><small>☻ Kayfiyat</small><b id="mood">Ajoyib 🙂</b></div></div></section>
+ <section class="panel breathing"><h3>♧ NAFAS MASHQI</h3><div class="breath-row"><div class="orb" id="orb"><span id="breathText">Tayyor</span></div><div><p>4-7-8 usuli bilan nafas oling</p><button id="breathBtn">Boshlash</button></div></div></section>
+</aside>
+</div>
+<footer class="audio"><div class="audio-thumb" id="audioThumb"></div><div class="audio-info"><b id="audioName">Yapon bog‘i — Tabiat ovozlari</b><small id="audioDesc">Sokin shamol, qushlar ovozi va suv shovullashi</small></div><button id="audioPrev">|◀</button><button class="audio-play" id="audioPlay">▶</button><button id="audioNext">▶|</button><div class="audio-wave">〰〰〰〰〰〰〰</div><button id="audioMute">🔉</button><input type="range" id="volume" min="0" max="100" value="55"><div class="live"><b id="miniClock">--:--</b><small>Jonli vaqt</small></div></footer>
+</main>
+</div>
+<div class="toast" id="toast"></div><div class="backdrop" id="backdrop"><div class="modal"><button class="close" id="close">×</button><h2 id="modalTitle">CALM SPACE</h2><div id="modalBody"></div></div></div>
+<script src="script.js"></script>
+</body></html>
